@@ -12,11 +12,60 @@
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Создание объявления</h1>
             <p class="lead text-body-secondary">Разместите объявление о поиске команды или игрока</p>
+            <div class="container my-2">
+                <main>
+                    <div class="row g-5">
+                        <div class="col-md-7 col-lg-8">
+                            <form class="needs-validation" novalidate="">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="country" class="form-label">Тип</label>
+                                        <select class="form-select" id="country" required="">
+                                            <option value="">Выбрать тип...</option>
+                                            <option>Поиск игрока</option>
+                                            <option>Поиск команды</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Выберите тип поиска
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="state" class="form-label">Отыгрыш</label>
+                                        <select class="form-select" id="state" required="">
+                                            <option value="">Выбор отыгрыша...</option>
+                                            <option>21.05, 12:00 - Третий ворон (Кончита Бонита)</option>
+                                            <option>21.05, 13:00 - Пакет с пакетами-2 (Суарэ)</option>
+                                            <option>21.05, 16:00 - Кубок Дисгармонии-3 (Суарэ)</option>
+                                            <option>22.05, 19:30 - Куб.Финал (Африка)</option>
+                                            <option><b>Другое</b></option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Выберите отыгрыш
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Количество игроков в вашей команде <span class="text-body-secondary">(При поиске игрока)</span></label>
+                                        <input type="email" class="form-control" id="email">
+                                        <div class="invalid-feedback">
+                                            Введите кол-во игроков
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
             <p>
                 <a href="#" class="btn btn-primary my-2">Создать</a>
             </p>
         </div>
     </div>
 </section>
+
 </body>
 </html>
